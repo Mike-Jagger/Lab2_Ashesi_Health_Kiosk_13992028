@@ -70,8 +70,8 @@ public class HealthKiosk {
             double sinVal = Math.round(Math.sin(radians) * 1000) / 1000.0;
             double cosVal = Math.round(Math.cos(radians) * 1000) / 1000.0;
 
-            System.out.println("sin(" + degrees + ") = " + sinVal);
-            System.out.println("cos(" + degrees + ") = " + cosVal);
+            System.out.printf("sin(%.3f) = %.3f\n", degrees, sinVal);
+            System.out.printf("cos(%.3f) = %.3f\n", degrees, cosVal);
         } else {
             System.out.println("Invalid health metric option");
         }
